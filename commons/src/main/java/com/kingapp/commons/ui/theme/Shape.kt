@@ -1,4 +1,4 @@
-package com.kingapp.importproyectlibrary.ui.theme
+package com.kingapp.commons.ui.theme
 
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.Shapes

@@ -1,4 +1,4 @@
-package com.kingapp.importproyectlibrary
+package com.kingapp.commons
 
 import org.junit.Test
 

@@ -1,4 +1,4 @@
-package com.kingapp.importproyectlibrary
+package com.kingapp.modularproyect
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,10 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setContent {
-                
-            GenericTextView(name = "Data")
-
-            
+            GenericTextView(name = "Name")
         }
     }
 }

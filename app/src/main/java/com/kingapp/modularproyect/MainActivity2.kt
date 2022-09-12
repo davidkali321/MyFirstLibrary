@@ -1,4 +1,4 @@
-package com.kingapp.importproyectlibrary
+package com.kingapp.modularproyect
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -10,31 +10,35 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
-import com.kingapp.importproyectlibrary.ui.theme.ImportProyectLibraryTheme
+import com.kingapp.modularproyect.ui.theme.ModularProyectTheme
 
-class MainComposeActivity : ComponentActivity() {
+class MainActivity2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
-            ImportProyectLibraryTheme {
+            ModularProyectTheme {
                 // A surface container using the 'background' color from the theme
                 Surface(
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                //    GenericTextView(name = "Data1")
+                    Greeting("Android")
+
                 }
             }
         }
     }
 }
 
+@Composable
+fun Greeting(name: String) {
+    Text(text = "Hello $name!")
+}
 
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
-    ImportProyectLibraryTheme {
-    //    GenericTextView(name = "Data1")
-
+    ModularProyectTheme {
+        Greeting("Android")
     }
 }
