@@ -66,15 +66,3 @@ dependencies {
 
     implementation project(':commons')
 }
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-                from components.release_apk
-                groupId = 'com.github.davidkali321'
-                artifactId = 'MyFirstLibrary'
-                version = '1.0.4'
-            }
-        }
-    }
-}

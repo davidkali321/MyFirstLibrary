@@ -10,6 +10,7 @@ import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.kingapp.commons.GenericText1
 import com.kingapp.modularproyect.ui.theme.ModularProyectTheme
 
 class MainActivity2 : ComponentActivity() {
@@ -23,7 +24,7 @@ class MainActivity2 : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Greeting("Android")
-
+                    GenericText1(name = "Name")
                 }
             }
         }
