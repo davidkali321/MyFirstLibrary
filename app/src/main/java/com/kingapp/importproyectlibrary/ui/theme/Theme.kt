@@ -1,4 +1,4 @@
-package com.kingapp.commons.ui.theme
+package com.kingapp.importproyectlibrary.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme
@@ -28,7 +28,7 @@ private val LightColorPalette = lightColors(
 )
 
 @Composable
-fun ModularProyectTheme(
+fun ImportProyectLibraryTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
     content: @Composable () -> Unit
 ) {

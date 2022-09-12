@@ -10,8 +10,9 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        //maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "ModularProyect"
+rootProject.name = "ImportProyectLibrary"
 include ':app'
 include ':commons'

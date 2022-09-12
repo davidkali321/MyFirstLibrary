@@ -1,4 +1,4 @@
-package com.kingapp.commons.ui.theme
+package com.kingapp.importproyectlibrary.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
