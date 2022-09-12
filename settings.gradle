@@ -16,4 +16,4 @@ dependencyResolutionManagement {
 
 rootProject.name = "ImportProyectLibrary"
 include ':app'
-//include ':commons'
+include ':commons'
