@@ -2,6 +2,7 @@ plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
     id 'maven-publish'
+
 }
 
 android {
@@ -32,6 +33,7 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
+        useIR = true
     }
     buildFeatures {
         compose true
@@ -65,16 +67,4 @@ dependencies {
     debugImplementation "androidx.compose.ui:ui-test-manifest:$compose_version"
 
     implementation project(':commons')
-}
-afterEvaluate {
-    publishing {
-        publications {
-            release(MavenPublication) {
-
-                groupId = 'com.github.davidkali321'
-                artifactId = 'MyFirstLibrary'
-                version = '1.0.4'
-            }
-        }
-    }
 }
