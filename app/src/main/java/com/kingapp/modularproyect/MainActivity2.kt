@@ -25,6 +25,7 @@ class MainActivity2 : ComponentActivity() {
                 ) {
                     Greeting("Android")
                     GenericText1(name = "Name")
+//Data
                 }
             }
         }
